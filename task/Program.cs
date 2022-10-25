@@ -3,6 +3,7 @@ string[] array = new string[size];
 
 Console.WriteLine("Введите с клавиатуры любое количество символов 5 раз через enter (допустимы как буквы, так и цифры): ");
 FillArray(array);
+Console.Clear();
 PrintArray(array);
 Console.WriteLine();
 Console.WriteLine("Строковый массив с элементами меньше или равно 3-х: ");
@@ -20,7 +21,7 @@ void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        Console.WriteLine(" " + array[i]);
+        Console.Write(array[i] + " ");
     }
   
 }
@@ -37,6 +38,7 @@ void Sorted(string[] array)
     }
     if (count == 0)
         {
+           Console.WriteLine();
            Console.Write("В данном массиве нет элементов меньше или равном 3-м!"); 
         }
 }
