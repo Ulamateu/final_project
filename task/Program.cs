@@ -8,7 +8,7 @@ PrintArray(array);
 int len = SecondSize(array);
 Console.WriteLine();
 Console.WriteLine("Строковый массив с элементами меньше или равно 3-х: ");
-TranferElements(array, len);
+TransferElements(array, len);
 void FillArray(string[] array)
 {
     for (int i = 0; i < size; i++)
@@ -37,7 +37,7 @@ int SecondSize(string[] array)
     }
     return leng;
 }
-void TranferElements(string[] array, int leng)
+void TransferElements(string[] array, int leng)
 {
     string[] array2 = new string[leng];
     Console.Write("[ ");
